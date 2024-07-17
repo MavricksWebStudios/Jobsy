@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn-primary {
+    @apply items-baseline p-2 my-3 w-fit justify-center font-medium transition-all duration-300 ease-in-out disabled:opacity-50 bg-blue-500  hover:bg-blue-600 hover:text-black border-none rounded-md;
+  }
+  .pill {
+    @apply border m-1 inline border-sky-300 rounded-md py-1 px-2 overflow-hidden;
+  }
+  .gradient {
+    @apply bg-gradient-to-r from-cyan-500 to-blue-500
+  }
+  .input-class {
+    @apply bg-transparent  p-1 w-[90%] pt-2 focus:border-b focus:border-sky-300 focus:outline-none;
+  }
+  .navbar-li {
+    @apply lg:mx-10 md:mx-6 hover:text-sky-400;
+  }
+  .secondary-color{
+    @apply text-slate-500;
+  }
+  .icon{
+    @apply inline mr-1;
+  }
+  .active{
+    @apply text-sky-400;
+  }
+}
+
+body {
+  background-color: #27272a;
+  color: whitesmoke;
+}
